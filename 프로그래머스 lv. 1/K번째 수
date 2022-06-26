@@ -4,7 +4,7 @@
 using namespace std;
 
 vector<int> solution(vector<int> array, vector<vector<int>> commands) {
-    vector<int> answer;
+    vector<int> answer;//answer는 스택에 해당
 
     int start, end, num;
     for (int i = 0; i < commands.size(); i++) {
