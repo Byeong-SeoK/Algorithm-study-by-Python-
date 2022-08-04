@@ -20,5 +20,4 @@ def solution(n):
             else:
                 continue
             
-    
     return answer
