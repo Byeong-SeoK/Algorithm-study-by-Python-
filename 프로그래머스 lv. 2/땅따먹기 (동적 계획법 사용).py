@@ -28,3 +28,18 @@ def solution(land):
     answer = max(SUM[N-1])
         
     return answer
+
+
+"""
+다른 풀이(land 배열 하나만으로 풀이)
+
+def solution(land):
+
+    for i in range(1, len(land)):
+        for j in range(len(land[0])):
+            land[i][j] = max(land[i -1][: j] + land[i - 1][j + 1:]) + land[i][j]
+            #max(land[i -1][: j] + land[i - 1][j + 1:]) 이 뜻은 결국
+            #i-1번째 배열의 모든 값들을 더한 값 중에서 가장 최대 값을 찾는다는 것이다.
+
+    return max(land[-1])
+"""
